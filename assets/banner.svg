@@ -1,0 +1,213 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 900 220" width="900" height="220">
+  <defs>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <path id="mp1" d="M 45,35 L 105,102"/>
+    <path id="mp2" d="M 45,35 L 225,20"/>
+    <path id="mp3" d="M 225,20 L 675,20"/>
+    <path id="mp4" d="M 855,35 L 675,20"/>
+    <path id="mp5" d="M 855,35 L 795,102"/>
+    <path id="mp6" d="M 145,195 L 235,207"/>
+    <path id="mp7" d="M 665,207 L 755,195"/>
+  </defs>
+
+  <!-- ── LEFT CLUSTER LINES (blue) ─────────────────── -->
+  <line x1="45" y1="35" x2="105" y2="102" stroke="#004D98" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="105" y1="102" x2="45" y2="175" stroke="#004D98" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+  </line>
+  <line x1="45" y1="175" x2="145" y2="195" stroke="#004D98" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.5s" repeatCount="indefinite" begin="1s"/>
+  </line>
+  <line x1="105" y1="102" x2="145" y2="195" stroke="#004D98" stroke-width="1.2" opacity="0.55">
+    <animate attributeName="opacity" values="0.35;0.7;0.35" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- LEFT BRIDGES (blue) -->
+  <line x1="45" y1="35" x2="225" y2="20" stroke="#004D98" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="145" y1="195" x2="235" y2="207" stroke="#004D98" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4s" repeatCount="indefinite" begin="0.7s"/>
+  </line>
+
+  <!-- TOP HORIZONTAL (blue) -->
+  <line x1="225" y1="20" x2="675" y2="20" stroke="#004D98" stroke-width="1.2" opacity="0.55">
+    <animate attributeName="opacity" values="0.35;0.7;0.35" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- BOTTOM HORIZONTAL (red) -->
+  <line x1="235" y1="207" x2="665" y2="207" stroke="#A50044" stroke-width="1.2" opacity="0.55">
+    <animate attributeName="opacity" values="0.35;0.7;0.35" dur="4.5s" repeatCount="indefinite" begin="1s"/>
+  </line>
+
+  <!-- RIGHT BRIDGES (red) -->
+  <line x1="855" y1="35" x2="675" y2="20" stroke="#A50044" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" repeatCount="indefinite" begin="0.3s"/>
+  </line>
+  <line x1="755" y1="195" x2="665" y2="207" stroke="#A50044" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4s" repeatCount="indefinite" begin="1.2s"/>
+  </line>
+
+  <!-- ── RIGHT CLUSTER LINES (red) ────────────────── -->
+  <line x1="855" y1="35" x2="795" y2="102" stroke="#A50044" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+  </line>
+  <line x1="795" y1="102" x2="855" y2="175" stroke="#A50044" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="4s" repeatCount="indefinite" begin="1s"/>
+  </line>
+  <line x1="855" y1="175" x2="755" y2="195" stroke="#A50044" stroke-width="1.5" opacity="0.7">
+    <animate attributeName="opacity" values="0.45;0.85;0.45" dur="3.5s" repeatCount="indefinite" begin="1.5s"/>
+  </line>
+  <line x1="795" y1="102" x2="755" y2="195" stroke="#A50044" stroke-width="1.2" opacity="0.55">
+    <animate attributeName="opacity" values="0.35;0.7;0.35" dur="5s" repeatCount="indefinite" begin="0.8s"/>
+  </line>
+
+  <!-- ── PARTICLES ─────────────────────────────────── -->
+  <circle r="2.5" fill="#004D98" opacity="0">
+    <animateMotion dur="4s" repeatCount="indefinite"><mpath xlink:href="#mp3"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#004D98" opacity="0">
+    <animateMotion dur="2.8s" repeatCount="indefinite"><mpath xlink:href="#mp1"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="2" fill="#004D98" opacity="0">
+    <animateMotion dur="3.2s" repeatCount="indefinite" begin="1s"><mpath xlink:href="#mp2"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle r="2" fill="#A50044" opacity="0">
+    <animateMotion dur="3.2s" repeatCount="indefinite" begin="0.4s"><mpath xlink:href="#mp4"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+  <circle r="2" fill="#A50044" opacity="0">
+    <animateMotion dur="2.8s" repeatCount="indefinite" begin="1.4s"><mpath xlink:href="#mp5"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2.8s" repeatCount="indefinite" begin="1.4s"/>
+  </circle>
+  <circle r="1.8" fill="#004D98" opacity="0">
+    <animateMotion dur="2s" repeatCount="indefinite" begin="0.7s"><mpath xlink:href="#mp6"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+  </circle>
+  <circle r="1.8" fill="#A50044" opacity="0">
+    <animateMotion dur="2s" repeatCount="indefinite" begin="1.7s"><mpath xlink:href="#mp7"/></animateMotion>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2s" repeatCount="indefinite" begin="1.7s"/>
+  </circle>
+
+  <!-- ── LEFT NODES (blue) ─────────────────────────── -->
+  <circle cx="45" cy="35" r="12" fill="#004D98" opacity="0.25">
+    <animate attributeName="r" values="10;17;10" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="45" cy="35" r="5" fill="#004D98" filter="url(#glow)">
+    <animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle cx="105" cy="102" r="12" fill="#004D98" opacity="0.25">
+    <animate attributeName="r" values="10;17;10" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="105" cy="102" r="5" fill="#004D98" filter="url(#glow)">
+    <animate attributeName="r" values="4;6;4" dur="3.5s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+
+  <circle cx="45" cy="175" r="12" fill="#004D98" opacity="0.25">
+    <animate attributeName="r" values="10;17;10" dur="4s" repeatCount="indefinite" begin="1s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="4s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  <circle cx="45" cy="175" r="5" fill="#004D98" filter="url(#glow)">
+    <animate attributeName="r" values="4;6;4" dur="4s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+
+  <circle cx="145" cy="195" r="10" fill="#004D98" opacity="0.25">
+    <animate attributeName="r" values="8;14;8" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  <circle cx="145" cy="195" r="4" fill="#004D98" filter="url(#glow)">
+    <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+
+  <!-- TOP BRIDGE NODES -->
+  <circle cx="225" cy="20" r="11" fill="#004D98" opacity="0.25">
+    <animate attributeName="r" values="9;15;9" dur="3s" repeatCount="indefinite" begin="0.3s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  <circle cx="225" cy="20" r="4" fill="#004D98" filter="url(#glow)">
+    <animate attributeName="r" values="3;5.5;3" dur="3s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+
+  <circle cx="675" cy="20" r="11" fill="#A50044" opacity="0.25">
+    <animate attributeName="r" values="9;15;9" dur="3s" repeatCount="indefinite" begin="0.8s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <circle cx="675" cy="20" r="4" fill="#A50044" filter="url(#glow)">
+    <animate attributeName="r" values="3;5.5;3" dur="3s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+
+  <!-- BOTTOM BRIDGE NODES -->
+  <circle cx="235" cy="207" r="10" fill="#004D98" opacity="0.25">
+    <animate attributeName="r" values="8;14;8" dur="4s" repeatCount="indefinite" begin="0.6s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="4s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+  <circle cx="235" cy="207" r="4" fill="#004D98" filter="url(#glow)">
+    <animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+
+  <circle cx="665" cy="207" r="10" fill="#A50044" opacity="0.25">
+    <animate attributeName="r" values="8;14;8" dur="4s" repeatCount="indefinite" begin="1.1s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="4s" repeatCount="indefinite" begin="1.1s"/>
+  </circle>
+  <circle cx="665" cy="207" r="4" fill="#A50044" filter="url(#glow)">
+    <animate attributeName="r" values="3;5;3" dur="4s" repeatCount="indefinite" begin="1.1s"/>
+  </circle>
+
+  <!-- ── RIGHT NODES (red) ─────────────────────────── -->
+  <circle cx="855" cy="35" r="12" fill="#A50044" opacity="0.25">
+    <animate attributeName="r" values="10;17;10" dur="3s" repeatCount="indefinite" begin="0.4s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+  <circle cx="855" cy="35" r="5" fill="#A50044" filter="url(#glow)">
+    <animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+
+  <circle cx="795" cy="102" r="12" fill="#A50044" opacity="0.25">
+    <animate attributeName="r" values="10;17;10" dur="3.5s" repeatCount="indefinite" begin="0.9s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3.5s" repeatCount="indefinite" begin="0.9s"/>
+  </circle>
+  <circle cx="795" cy="102" r="5" fill="#A50044" filter="url(#glow)">
+    <animate attributeName="r" values="4;6;4" dur="3.5s" repeatCount="indefinite" begin="0.9s"/>
+  </circle>
+
+  <circle cx="855" cy="175" r="12" fill="#A50044" opacity="0.25">
+    <animate attributeName="r" values="10;17;10" dur="4s" repeatCount="indefinite" begin="1.4s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="4s" repeatCount="indefinite" begin="1.4s"/>
+  </circle>
+  <circle cx="855" cy="175" r="5" fill="#A50044" filter="url(#glow)">
+    <animate attributeName="r" values="4;6;4" dur="4s" repeatCount="indefinite" begin="1.4s"/>
+  </circle>
+
+  <circle cx="755" cy="195" r="10" fill="#A50044" opacity="0.25">
+    <animate attributeName="r" values="8;14;8" dur="3s" repeatCount="indefinite" begin="1.9s"/>
+    <animate attributeName="opacity" values="0.25;0.1;0.25" dur="3s" repeatCount="indefinite" begin="1.9s"/>
+  </circle>
+  <circle cx="755" cy="195" r="4" fill="#A50044" filter="url(#glow)">
+    <animate attributeName="r" values="3;5;3" dur="3s" repeatCount="indefinite" begin="1.9s"/>
+  </circle>
+
+  <!-- ── CENTRAL TEXT ────────────────────────────────── -->
+  <text x="450" y="108" text-anchor="middle"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+        font-size="42" font-weight="700" fill="#FFFFFF">
+    Sebastian Salazar
+    <animate attributeName="opacity" values="0;0;1" dur="1.8s" fill="freeze"/>
+  </text>
+  <text x="450" y="142" text-anchor="middle"
+        font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif"
+        font-size="11.5" fill="#94A3B8" letter-spacing="3.5">
+    OPEN SOURCE · ZK · BLOCKCHAIN · AI
+    <animate attributeName="opacity" values="0;0;0;1" dur="2.4s" fill="freeze"/>
+  </text>
+</svg>
